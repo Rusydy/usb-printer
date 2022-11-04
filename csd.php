@@ -42,7 +42,5 @@ $printer->text("                         BLACK/690                              
 $printer->text("                         JEREMMY                                               \n");
 $printer->text("                                                                               \n");
 $printer->text("                                                                               \n");
-
-
 $printer->cut();
 $printer->close();
