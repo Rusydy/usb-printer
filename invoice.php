@@ -39,9 +39,9 @@ $total_in_words = str_pad("SATU JUTA LIMA RATUS DUA PULUH RIBU", 51);
 $space_7 = str_pad(" ", 11);
 $space_8 = str_pad(" ", 66);
 $space_9 = str_pad(" ", 58);
-$amount_1 = str_pad("1,500,000", 13);
-$amount_2 = str_pad("1,500,000", 13);
-$amount_3 = str_pad("1,500,000", 13);
+$amount_1 = str_pad("1,500,000", 14);
+$amount_2 = str_pad("1,500,000", 14);
+$amount_3 = str_pad("1,500,000", 14);
 $signer = str_pad("TIMOTHY ELVIN", 21);
 
 $connector = new CupsPrintConnector("EPSON_LQ_310");
@@ -63,7 +63,6 @@ foreach ($table as $item) {
     $printer->text("$default");
 }
 $printer->text($default);
-//              ----xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-----------xxxxxxx------\
 $printer->text($space_6 . $total_in_words . $space_7 . $amount_1 . "\n");
 $printer->text($space_8 . $amount_2 . "\n");
 $printer->text($space_8 . $amount_3 . "\n");
